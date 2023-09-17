@@ -1,1 +1,0 @@
-# the10000-hour_rule
