@@ -7,17 +7,17 @@ const Title = styled.header`
         max-width: 564px;
         aspect-ratio: 564/112;
         position: relative;
-    }
 
-    .title::after {
-        content: "";
-        width: 220px;
-        aspect-ratio: 225px;
-        background-image: url("img/time.svg");
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(50%);
+        &::after {
+            content: "";
+            width: 220px;
+            aspect-ratio: 225px;
+            background-image: url("img/time.svg");
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(50%);
+        }
     }
 `;
 
