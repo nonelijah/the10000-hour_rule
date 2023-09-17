@@ -28,13 +28,14 @@ input, button {
 }
 [class^=btn] {
     cursor: pointer;
+    border: 0;
     border-radius: 56px;
     padding: 21px 49px;
 
     color: #5B2386;
     font-size: 24px;
     font-weight: 700;
-    
+    font-family: 'GmarketSansMedium', sans-serif;
     background-color: #FCEE21;
     box-shadow: 0 0 10px rgba(0 0 0 0.5 );
 

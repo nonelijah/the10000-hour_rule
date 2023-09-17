@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Title = styled.header`
-    padding: 194px auto 125px;
+    margin: 194px auto 125px;
 
     .title {
         max-width: 564px;
@@ -13,10 +13,13 @@ const Title = styled.header`
             width: 220px;
             aspect-ratio: 225px;
             background-image: url("img/time.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(50%);
+            transform: translate(-50%, -50%);
         }
     }
 `;

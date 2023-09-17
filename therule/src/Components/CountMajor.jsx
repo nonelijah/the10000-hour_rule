@@ -7,6 +7,7 @@ const Form = styled.form`
         font-weight: 400;
         input {
             color: black;
+            min-width: 200px;
             max-height: 57px;
             width: auto;
             border-radius: 7px;
@@ -59,8 +60,10 @@ function CountMajor() {
 
         if (inpMajor.value === "") {
             alert("희망하는 분야를 입력해주세요");
+            inpMajor.focus();
         } else if (inpTime.value === "") {
             alert("훈련할 시간을 입력해주세요.");
+            inpTime.focus();
         } else {
             outMajor.textContent = inpMajor.value;
             outTimes.textContent = 10000 / parseInt(inpTime.value);

@@ -5,7 +5,7 @@ import LinkBtns from "./LinkBtns";
 import Modal from "./Modal";
 
 function Main() {
-    const { modalShow, setModalShow } = useState(false);
+    const [modalShow, setModalShow] = useState(false);
 
     return (
         <main>
@@ -15,10 +15,10 @@ function Main() {
                     1만 시간의 법칙과 이를 계산해보기.
                 </h3>
                 <Catchphrase />
-                <CountMajor setModalShow={setModalShow} />
+                <CountMajor />
                 <LinkBtns setModalShow={setModalShow} />
             </section>
-            {modalShow && <Modal />}
+            {modalShow ? <Modal setModalShow={setModalShow} /> : null}
         </main>
     );
 }

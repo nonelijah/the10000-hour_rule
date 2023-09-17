@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useState } from "react";
 
 const Btns = styled.div`
     margin: 127px 130px;
@@ -11,8 +12,11 @@ const Btns = styled.div`
     }
 `;
 
-function openModal() {}
-function LinkBtns() {
+function LinkBtns({ setModalShow }) {
+    function openModal() {
+        setModalShow(true);
+    }
+
     return (
         <Btns>
             <button className="btn-open-modal" onClick={openModal}>
